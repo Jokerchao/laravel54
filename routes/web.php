@@ -26,6 +26,8 @@ Route::get('/posts/{post}/delete','PostController@delete');
 //图片上传
 Route::post('/posts/image/upload','PostController@imageUpload');
 
+//等等
+
 
 
 
