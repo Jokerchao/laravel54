@@ -9,6 +9,9 @@ class PostController extends Controller
     //列表
     public function index()
     {
+//        $app=app();
+//        $log=$app->make('log');
+        \Log::info("post_index",['data'=>'this is post index']);
         $posts=Post::orderBy('created_at','desc')->Paginate(10);
         return view("post/index",compact('posts'));
         //return view("post/index");
